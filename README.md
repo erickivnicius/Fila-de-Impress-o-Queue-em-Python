@@ -58,8 +58,6 @@ class PersonalArray:
 ### PersonalQueue
 A classe PersonalQueue implementa a fila de impressão, utilizando o array personalizado para gerenciar os documentos na fila.
 
-python
-Copiar
 class PersonalQueue:
     list = PersonalArray()
     
@@ -70,8 +68,6 @@ class PersonalQueue:
         return self.list.removePosition(0)
 
 ### Exemplo de Uso
-python
-Copiar
 fila_impressao = PersonalQueue()
 
 # Enfileirando documentos
@@ -83,4 +79,3 @@ fila_impressao.enqueue("Document3")
 print(fila_impressao.dequeue())  # Saída: "Document1"
 print(fila_impressao.dequeue())  # Saída: "Document2"
 print(fila_impressao.dequeue())  # Saída: "Document3"
-
